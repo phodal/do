@@ -61,6 +61,8 @@
  - 阶段六：自动化验收测试和自动化部署
  - 阶段七：持续部署
 
+#### 主干开发策略
+
 ### 2. 自动化
 
 自动化演进路径（《SRE：Google 运维解密》）：
@@ -79,9 +81,50 @@ Dashing: http://dashing.io/
 
 ### 4. 代码化
 
-#### Pipeline as Code
+#### 配置即代码
+
+> 基础设施即代码是基于从软件开发实践的基础设施自动化的方法。它强调配置和改变系统及其配置的一致性，可重复的程序。
+
+#### 流水线即代码
+
+> 流水线即代码 (Pipeline as Code) 通过编码而非配置持续集成 / 持续交付 (CI/CD) 运行工具的方式定义部署流水线。
 
  - Jenkinsfile
+
+Jenkinsfile 最佳实践（来源：《[Pipeline Best Practices](https://jenkins.io/doc/book/pipeline/pipeline-best-practices/)》
+
+ 1. 确保 Groovy 代码在流水线中只作为胶水。
+ 2. 避免流水线中的 Groovy 代码过于复杂
+ 3. 减少重复相似流水线的步骤
+ 4. 避免调用 ``Jenkins.getInstance``
+
+使用共享库：
+
+ 1. 不要覆写内建的流水线步骤
+ 2. 避免巨大的全局变量声明文件
+ 3. 避免非常大的共享库
+
+示例（来源《[流水线即代码](https://insights.thoughtworks.cn/pipeline-as-code/)》：
+
+```
+node('master') {
+   stage('Checkout') {…}
+   stage('Code Analysis') {…}
+   stage('Unit Test') {…}
+   stage('Packing') {…}
+   stage('Archive') {…}
+   stage('DEV') {…}
+}
+stage('SIT') {
+   timeout(time:4, unit:'HOURS') {
+       input "Deploy to SIT?"
+   }
+   node('master') {…}
+}
+stage('Acceptance Test') {
+   node('slave') {…}
+}
+```
 
 #### Deploy as Code
 
@@ -91,9 +134,9 @@ aka Deployment process as code
 
 #### Docs like Code
 
- - ADR
+> Docs like Code（文档代码化），是指采用开发软件的方式来开发文档，最后表现出文档和代码类似的现象。
 
-特征（[软件技术文档代码化现象](https://zhuanlan.zhihu.com/p/33045831)
+它具备以下一些特征（《[软件技术文档代码化现象](https://zhuanlan.zhihu.com/p/33045831)》）
 
  1. **开发方式一致**。软件代码在开发的时候，基本流程是：写代码、审查代码和部署代码，文档在开发时候，也会采用和代码开发相同或类似的方式。
  2. **集成在开发流程中**。文档开发作为软件开发的一部分，也是最终产品的一部分，其开发过程是嵌入在整个软件开发过程中的。
@@ -101,7 +144,15 @@ aka Deployment process as code
  4. **使用标记语言**。一般使用轻量级标记语言如 Markdown, reStructuredText 或 ASCii 等，或更复杂的 XML 等标记语言。
  5. **文档和代码共同存储**。例如使用 Github，代码和文档会在同一个 repo 下，开发人员和文档工程师都可以访问。
  6. **版本控制**。一般使用 git 或 svn 这类工具进行版本管理。
- 7. **网站发布自动化**。内容写作完成后，一拉 webhook 就能自动发布为帮助页面。
+ 7. **网站发布自动化**。内容写作完成后，一拉 Web Hook 就能自动发布为帮助页面。
+
+常见的实践有：
+
+ - [ADR](https://www.phodal.com/blog/documenting-architecture-decisions/)（Architecture Decision Records，即架构决策记录）。是一个类似于亚历山大模式（即：设计模式）的短文本文件。（虽然决策本身不一定是模式，但它们分享着力量的特征平衡。）每个记录都描述了一组力量和一个响应这些力量的决策。请注意，决策是这里的核心部分，所以特定的力量可能出现在多个 ADR（架构决策记录） 中。
+
+对应的系统实践：
+
+ - 《[【架构拾集】基于 Markdown 文档展示系统设计](https://www.phodal.com/blog/architecture-in-realworld-markdown-based-document-system-design/)》
 
 ### DevOps 生命周期
 
@@ -201,9 +252,14 @@ Push Hook 示例：
 ### 持续学习
 
 
-参考：
+### 持续部署
 
- - 《DevOps 实践指南》
+发布工程哲学：
+
+ - 自服务模型
+ - 追求速度
+ - 密闭性
+ - 强调策略和流程
 
 ## 敏捷实践
 
