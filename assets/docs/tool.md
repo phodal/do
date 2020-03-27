@@ -177,6 +177,23 @@ Path to Production，来源于精益，旨在通过可视化的方式来展示�
 | 工具 | Git & GitHub | Jenkins |  Jenkins |  Jenkins |  - | Jenkins | - | 邮件  | - | 
 | 制品 |  代码  | 持续集成结果 | -  |  测试报告  |  测试报告  |  - | 邮件结果  |  -| | 
 
+
+
+### 坐标分析
+
+### 心流模型
+
+```
+```toolset
+|  Challenge;Skill/Ability   | low | high |
+|-|-|-|    
+| low  |      | boredom |
+| high | anxiety | flow |
+
+config: {"type": "line-model"}
+```
+```
+
 ## DevOps
 
 ### DevOps 元素周期表
