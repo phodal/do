@@ -2,36 +2,6 @@
 
 来源：《[CNUTCon全球运维技术大会 ](https://cnutcon.infoq.cn/2018/shanghai/presentation/910)》&《[CNUTCon全球运维技术大会稿件 ](https://myslide.cn/slides/10493#)》
 
-<style>
-	#xiaomi-business-experience {
-		width:100%;
-		height:200px; 
-		text-align:center;
-	}
-	
-	#xiaomi-business-experience div{
-		width:40%; 
-		height: 130px; 
-		padding-top:50px; 
-		color:#FFF;
-		float:left;
-	}
-	
-	#xiaomi-business-experience div span{
-		font-size: 16px;
-		font-weight: bold;
-	}
-	
-	#xiaomi-business-experience div.item1{
-		background:#AF8039; 
-	}
-
-	#xiaomi-business-experience div.item2{
-		background:#2f6299; 
-		margin-left:20px;
-	}
-	
-</style>
 ## 背景介绍
 
 小米研发效能领域的三个阶段
@@ -68,26 +38,32 @@ config: {"type": "circle"}
 		- 隔离：基于Docker提供更更好的隔离性
 
 ## 商业采购
+
 ### 进行商业采购的诉求
-<div id="xiaomi-business-experience" >
-	<div class="item1">
-		<span>基于开源的⽅方案遇到困难</span><br/>
-		性能瓶颈<br>
-		业务需求⽇日益多元化但团队规模有限
-	</div>
-	<div class="item2">
-		<span>基于开源的⽅方案遇到困难</span><br/>
-		性能瓶颈<br>
-		业务需求⽇日益多元化但团队规模有限
-	</div>
-</div>
+
+```list-style
+ - 基于开源方案遇到困难
+   - 性能瓶颈
+   - 业务需求⽇益多元化，但团队规模有限
+ - 扩展更多的能力
+   - 更多元化的代码质量检查 
+   - 审计需求
+   - 二进制、镜像安全扫描
+
+config: {"type": "group-square"}
+```
 
 ### 采购经验总结
+
+| 分类 | 收益  | 风险 |
+|-|-|-|
+| 自研 | 平台功能产出 <br> 技术积累 | 人员变动 <br> 技术攻关失败 <br> 产品可用性差 |
+| 采购 | 更快价值交付 <br> 更快获取业界一流经验  | 数据泄漏 <br> 供应商不可控因素无法提供服务等 |
+
 * 货比三家，一定要多试用比较
 * 售后服务与咨询很重要
 * 采购可整合性更好的产品
 * 尽量离线部署以防止数据泄露
-
 
 ## 自研研发效能平台
 
