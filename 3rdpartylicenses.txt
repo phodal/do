@@ -91,6 +91,9 @@ MIT
 @angular/router
 MIT
 
+@ledge-framework/render
+MPL-2.0
+
 @ngx-pwa/local-storage
 MIT
 The MIT License
