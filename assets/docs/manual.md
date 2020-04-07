@@ -170,10 +170,13 @@ Path to Production，来源于精益，旨在通过可视化的方式来展示�
 
 #### 技术债看板
 
-```table-step
-| todo | doing | done |
-|-|-|-|
-|  Lodash 体积过大 | | Jasmine -> Jest |
+```process-step
+ - todo
+   - ""
+ - doing
+   - ""
+ - done
+   - ""
 ```
 
 #### 技术债热力图
