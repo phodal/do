@@ -177,10 +177,6 @@ Path to Production，来源于精益，旨在通过可视化的方式来展示�
 | 工具 | Git & GitHub | Jenkins |  Jenkins |  Jenkins |  - | Jenkins | - | 邮件  | - | 
 | 制品 |  代码  | 持续集成结果 | -  |  测试报告  |  测试报告  |  - | 邮件结果  |  -| | 
 
-
-
-### 坐标分析
-
 ### 心流模型
 
 |  挑战 / 能力   | low | high |
@@ -196,6 +192,12 @@ Path to Production，来源于精益，旨在通过可视化的方式来展示�
 
 config: {"type": "line-chart"}
 ```
+
+### 架构决策记录
+
+来源：《[架构决策记录](https://www.phodal.com/blog/documenting-architecture-decisions/)》
+
+> 架构决策记录，是一个类似于亚历山大模式（即：设计模式）的短文本文件。（虽然决策本身不一定是模式，但它们分享着力量的特征平衡。）每个记录都描述了一组力量和一个响应这些力量的决策。请注意，决策是这里的核心部分，所以特定的力量可能出现在多个 ADR（架构决策记录） 中。
 
 ### 新项目检查清单
 
