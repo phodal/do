@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1586410753640,
+  "timestamp": 1586410736760,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -161,7 +161,7 @@
     "/assets/docs/qa.md": "d5e436137b213567b3c9d9617494845e852757d5",
     "/assets/docs/reporter.md": "e99e5fdc5dbfa0f68ce42cf956151c7d570c9040",
     "/assets/docs/resources.md": "f90b00683c7d4f444e942497b367df3db859ea99",
-    "/assets/docs/solutions/coding.md": "290bf12457ca192348582918e3babe7b18a72cfb",
+    "/assets/docs/solutions/coding.md": "1dd1211a90ed1051697216a0b9821e5c428e71bf",
     "/assets/docs/tool.md": "3b0dfe63dad9af36e431698bccf8141f6153749b",
     "/assets/elements.json": "25aa1a08b7d946f3b50a88fa77f23c5fe7f27189",
     "/assets/icons/icon-128x128.png": "ff805ab6b7d11b3fa036f5628fa60963b71b10d6",
