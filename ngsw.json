@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1586513916249,
+  "timestamp": 1586514964479,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -138,7 +138,7 @@
     "/assets/docs/casestudies/etsy.md": "6d1d7f4e7d299743126ab03ae2d8d84217c950f6",
     "/assets/docs/casestudies/hp.md": "e1ded33f092a672e57d1422dfa760e58a37d8d2f",
     "/assets/docs/casestudies/huawei.md": "e81f89767e783b5724d1e9c38bf72107c514a115",
-    "/assets/docs/casestudies/ledge.md": "4b7c83496d707a8dc81859a41987d81201c35847",
+    "/assets/docs/casestudies/ledge.md": "42249318e6f0bbac553a6deb05d43d3d13831ba9",
     "/assets/docs/casestudies/meituan.md": "65e4dcaec76dd5e6266c2aab5386d25a1d992a22",
     "/assets/docs/casestudies/nonghang.md": "9ed4df026c197eab297ac38004141ff5161229e3",
     "/assets/docs/casestudies/tencent.md": "ad048d7ece447a00c333c6f1161bb8db6c06c472",
