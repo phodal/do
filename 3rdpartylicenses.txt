@@ -94,9 +94,6 @@ MIT
 @angular/router
 MIT
 
-@angular/service-worker
-MIT
-
 @ledge-framework/render
 MPL-2.0
 
