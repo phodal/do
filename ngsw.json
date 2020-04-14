@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1586853506135,
+  "timestamp": 1586854986902,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -14,8 +14,8 @@
         "/5-es5.932946745193b647b099.js",
         "/6-es2015.477ed1dab6c605f7c8ef.js",
         "/6-es5.477ed1dab6c605f7c8ef.js",
-        "/7-es2015.580525c7814eb6ef531c.js",
-        "/7-es5.580525c7814eb6ef531c.js",
+        "/7-es2015.9f31828a038d7e2a7169.js",
+        "/7-es5.9f31828a038d7e2a7169.js",
         "/8-es2015.d43f04b4cd5053850046.js",
         "/8-es5.d43f04b4cd5053850046.js",
         "/9-es2015.9d9632802dcb11ceea5e.js",
@@ -27,10 +27,10 @@
         "/manifest.webmanifest",
         "/polyfills-es2015.9437cd1c9e700d460152.js",
         "/polyfills-es5.d03c639b22d15463ae23.js",
-        "/runtime-es2015.b99ecb64983e3e55541f.js",
-        "/runtime-es5.b99ecb64983e3e55541f.js",
+        "/runtime-es2015.0238ba9bf67a18ea13a9.js",
+        "/runtime-es5.0238ba9bf67a18ea13a9.js",
         "/scripts.d87278c272c84070759a.js",
-        "/styles.ea5bdf301c7168802760.css"
+        "/styles.4b0915794e88cbec86be.css"
       ],
       "patterns": []
     },
@@ -50,6 +50,7 @@
         "/assets/docs/casestudies/bilibili.md",
         "/assets/docs/casestudies/bocloud.md",
         "/assets/docs/casestudies/china-bank.md",
+        "/assets/docs/casestudies/cloudbase.md",
         "/assets/docs/casestudies/cmb.md",
         "/assets/docs/casestudies/daocloud.md",
         "/assets/docs/casestudies/dasouche.md",
@@ -126,8 +127,8 @@
     "/5-es5.932946745193b647b099.js": "92b3ddbb1a5dc564c4c2e0e24dabec7e24a505e0",
     "/6-es2015.477ed1dab6c605f7c8ef.js": "e708c72298fb2c3b95320714d3c632cc7db695b5",
     "/6-es5.477ed1dab6c605f7c8ef.js": "b7a842d4d9d671a7f87cf2303685cf75470f7665",
-    "/7-es2015.580525c7814eb6ef531c.js": "aaa6fdbedece9bf5b94b08415ac20b501a1ac346",
-    "/7-es5.580525c7814eb6ef531c.js": "1bae3e1bee766009d8238924e9e41284f568d6b3",
+    "/7-es2015.9f31828a038d7e2a7169.js": "c8814a56ca4fb64c32081bc511cc500df133608b",
+    "/7-es5.9f31828a038d7e2a7169.js": "2172981e937f88d564c94a54ecd99bc08a1f4f20",
     "/8-es2015.d43f04b4cd5053850046.js": "f87a264dcf1e20de37725ad0bd013bcb50daacbe",
     "/8-es5.d43f04b4cd5053850046.js": "a8b646df072fa340a355018abbf6d677f94f0b93",
     "/9-es2015.9d9632802dcb11ceea5e.js": "76d44b8871ffb3c69b8989fb3bd746082d1334c0",
@@ -143,6 +144,7 @@
     "/assets/docs/casestudies/bilibili.md": "8c7004991dfe53ae7a038b10f7aac45cf79c3d78",
     "/assets/docs/casestudies/bocloud.md": "f5e504005582a51b61e350083d5518172aa1a15d",
     "/assets/docs/casestudies/china-bank.md": "057af658e912914182b271b7894faa42891f5286",
+    "/assets/docs/casestudies/cloudbase.md": "5bedfad9bff009772fb82612dc7a3edf36c3300f",
     "/assets/docs/casestudies/cmb.md": "110f8e7a766f04e4b040eb93e24de868b3d9fb85",
     "/assets/docs/casestudies/daocloud.md": "8fa6027607d519dac427e5dce72d3444352e6a35",
     "/assets/docs/casestudies/dasouche.md": "737b1d381efc3be5d0491c66cd3fbb2edf288d75",
@@ -208,16 +210,16 @@
     "/assets/resources/images/avatar.svg": "f2e5b9fbe11872d221362874952e7a82b316f6a4",
     "/assets/scully-routes.json": "4375767411031dc905785dc59ec91483a5b353f4",
     "/favicon.ico": "93b47691d4c7490825c26196259759826aa7ea80",
-    "/index.html": "5d00570e0e5af3447ebafa9465bbfb68c158d246",
+    "/index.html": "24a0bb490144429963f3be1c261e361b2aeb4452",
     "/main-es2015.66277c0d2fa633cc05dd.js": "afba139f3d72fc5e364a24e4b0d3926695ec9912",
     "/main-es5.66277c0d2fa633cc05dd.js": "b3a9cb12e80837c7d4235c980e9740f285604c9e",
     "/manifest.webmanifest": "7d28c69185f7048932ee7f5c73322708aaea798d",
     "/polyfills-es2015.9437cd1c9e700d460152.js": "3aea167948f7f924e7094a2053db521e86bb4785",
     "/polyfills-es5.d03c639b22d15463ae23.js": "cd8b83cd6687f616be63020c7905318ee30ff429",
-    "/runtime-es2015.b99ecb64983e3e55541f.js": "f6ccea685d9d1cd36c40cbf72d01b770573440e5",
-    "/runtime-es5.b99ecb64983e3e55541f.js": "d6c5756f21457177b250fa4aeb7ea617931bb71e",
+    "/runtime-es2015.0238ba9bf67a18ea13a9.js": "b187268bbf5df9c7813b16e2d0128290f6460d07",
+    "/runtime-es5.0238ba9bf67a18ea13a9.js": "c3aad0a55d3c4af520917f231ff4a71bb8561862",
     "/scripts.d87278c272c84070759a.js": "f1a25ef52c25c6bd9a357b715a2544913302535e",
-    "/styles.ea5bdf301c7168802760.css": "aecfae51a8a6a084883a103599252fc9e2a641c7"
+    "/styles.4b0915794e88cbec86be.css": "2f3b7a5483f316b64b52cf031e1fd10216d357c2"
   },
   "navigationUrls": [
     {
