@@ -127,6 +127,12 @@ THE SOFTWARE.
 
 @ngx-starter-kit/ngx-utils
 
+@ngx-translate/core
+MIT
+
+@ngx-translate/http-loader
+MIT
+
 @scullyio/ng-lib
 
 @tweenjs/tween.js
