@@ -1,5 +1,35 @@
 # 相关资源
 
+## DevOps 读书雷达
+
+
+```tech-radar
+ - 文化
+   - adopt
+     - 《第五项修炼: 学习组织的技术和实践》
+   - trail
+   - assess
+   - hold
+     - 《凤凰项目：一个IT运维的传奇故事》
+ - 流程
+   - adopt
+   - trail
+   - assess
+   - hold
+ - 模式
+   - adopt
+   - trail
+   - assess
+   - hold
+ - 实践
+   - adopt
+    - 《DevOps实践指南》
+    - 《DevOps实施手册 在多级IT企业中使用DevOps》
+   - trail
+   - assess
+   - hold
+```
+
 ## 文章
 
 ### 敏捷
