@@ -1,5 +1,7 @@
 # 总览
 
+**免责声明**：本操作手册并非适用于所有的企业，也并非所有的组织都应当按照该流程实施。 —— Phodal
+
 我们依据我们的实施经验将 DevOps 实施的过程分为了这么几个步骤：
 
 1. [建立愿景与方向](/manual#建立愿景与方向)
@@ -346,6 +348,26 @@ Bruck Tuckman 团队发展模型：
 
 ### 测试策略
 
+#### 测试策略工具
+
+常见的测试策略组合：
+
+- 框架/模式库测试。xUnit，xMock，如 Java 语言里的 JUnit, Mockito；JavaScript 中的 Jest
+- 端到端 API 测试。JMeter，Postman，Rest Assured，Karate
+- UI 集成测试。Protractor
+
+考虑到测试即文档，在实现实现的时候，会配合一些支持自然语言描述的框架，如：
+
+- 文档式测试，Gauge （主流语言），Concordion（Java）
+- BDD 测试，Cucumber（主流语言）
+- ATDD 测试，Robot Framework（Python 语言）
+
+为了与运行客户端一配合，我们还需要有底层 API 来控制浏览器、客户端应用：
+
+- Appium。移动 APP 和桌面应用，支持主流语言
+- Selenium。Web 浏览器，支持主流语言
+- Puppeteer。Node.js API 操作 Chrome 浏览器
+
 #### 架构的单元测试
 
 ArchUnit： ArchUnit 是用来检查架构特征的 Java 测试库，比如包与类的依赖关系、注解、甚至是调用层级一致性。它可以附加在现有的测试方案中，以单元测试的方式运行，但目前只能用于 Java 架构。ArchUnit 测试套件可以合并到持续集成环境及部署流水线中，使我们可以更容易地利用架构适应度函数实现演进式架构。
@@ -411,6 +433,14 @@ JDepend 设计质量指标：
 
 ## 技术实践设计
 
+### 提交规范
+
+#### 提交信息规范
+
+#### 预本地提交
+
+#### 预服务器提交
+
 ### 制定代码规范
 
 #### Checkstyle
@@ -421,6 +451,8 @@ JDepend 设计质量指标：
 
 - Prettier 是一个代码风格统一工具。
 - Angular Lint。`ng lint --fix`
+
+### 代码回顾
 
 ## 多团队探索
 
@@ -443,6 +475,8 @@ JDepend 设计质量指标：
 | 3    | 完善概念图，继续设计微服务分区 | 展示概念图和微服务的分区设计                         |
 
 ## 选择方案
+
+### 各步骤方案
 
 如 《DevOps 实施手册：在多级 IT 企业中使用 DevOps》 所介绍的 DevOps 实施方案，几点要求：
 
