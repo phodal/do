@@ -5,17 +5,19 @@
 我们依据我们的实施经验将 DevOps 实施的过程分为了这么几个步骤：
 
 1. [建立愿景与方向](/manual#建立愿景与方向)
-2. [度量组织现状、系统现状](/manual#度量)
+2. [度量：组织、系统现状](/manual#度量)
 3. [准入条件](/manual#准入条件)。查看是否满足实施 DevOps 的准入条件。
 4. [探索可行方案](/manual#探索可行方案)。即 MVP 尝试
 5. [MVP](/manual#mvp)。一次快速的 DevOps 过程和结果的 showcase。
 6. [精细的 DevOps 实施](/manual#实施落地)
-7. [规模化 DevOps 落地](/manual#规模化)
+7. [回顾优化](/manual#回顾优化)
+8. [规模化 DevOps 落地](/manual#规模化)
 
 对应的在手册中，还包含了
 
 - 附录 1：移动应用的自动化测试
 - 附录 2：可信软件系统 10 要素
+- 附录 3：基本概念
 
 # 建立愿景与方向
 
@@ -999,7 +1001,9 @@ Kafka：[Kafka Quickstart](https://kafka.apache.org/quickstart)
 
 ## 输出
 
-# 规模化
+# 回顾总结
+
+# 规模化 DevOps 落地
 
 ## DevOps 能力中心
 
