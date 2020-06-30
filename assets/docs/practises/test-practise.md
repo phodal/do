@@ -359,6 +359,64 @@ Resources: [Qixi's presentations](https://github.com/macdao/presentations)
 }
 ```
 
+
+# 单元测试
+
+## 流水线集成 
+
+Ant + JUnit + Jacoco 示例：[model-ant-project](https://github.com/jenkinsci/model-ant-project)
+
+# 测试工具
+
+> Taurus是一个用于测试自动化的开源框架。 这个免费工具运行来自其他开源工具的脚本的性能测试，包括JMeter，Gatling，Locust和Selenium。 通过扩展他们的能力并掩盖复杂性，Taurus提供了一种创建，运行和分析负载测试的简单方法。 Taurus使用YAML或JSON，它们更容易管理。
+
+官网：https://gettaurus.org/
+
+## BlazeMeter
+
+```bash
+┌───── 1 73 users, 2 ~73 active ─────┐┌──────────────────── Latest Interval Stats at 18:03:47 ────────────────────┐ ┌─┬─┐
+│                                 ..o││         Average Times:              Percentiles:          Response Codes: │   │
+│                               .o..o││          Elapsed: 4.566               0.0%: 3.224       200:  100.00% (34)│   │   ┌───┐ ┬   ┬ ┬──┐ ┬   ┬ ┌───┐
+│                           o.oo.o..o││          Connect: 0.170              50.0%: 5.068        All: 100.00% (34)│   │   ┌───┤ │   │ │    │   │ └───┐
+│                       o.o.o.oo.oo.o││          Latency: 1.480              90.0%: 5.248                         │   ┴   └───┴ └───┴ ┴    └───┴ └───┘
+│                    oo.o.o.o.oo.oooo││                                      95.0%: 6.088                         │     \ v1.14.2 by BlazeMeter.com \
+│                 oo.oo.o.o.o.oo.oooo││                                      99.0%: 6.796                         │
+│             ooo.oo.oo.o.o.o.ooooooo││                                      99.9%: 6.796                         │JMeter: quick-test
+│         .oooooooooooo.o.ooooooooooo││                                     100.0%: 6.796                         │                 15 %
+│      .ooooooooooooooooooooooooooooo││                                                                           │Elapsed: 00:00:54        ETA: 00:05:05
+│  ..oooooooooooooooooooooooooooooooo││                                                                           │
+│oooooooooooooooooooooooooooooooooooo││                                                                           │ local
+└────────────────────────────────────┘└───────────────────────────────────────────────────────────────────────────┘   disk-write: 8,334,038
+┌──────── 1 34 hits, 2 0 fail ───────┐┌──────────────────────── Cumulative Stats 00:00:36 ────────────────────────┐  engine-loop: 0.154
+│                       . . .        ││         Average Times:              Percentiles:          Response Codes: │    disk-read: 4,063,098
+│                       . . .    .  .││          Elapsed: 1.774               0.0%: 0.240      200:  100.00% (745)│     conn-all: 147
+│                 ..  . . . .    .  .││          Connect: 0.074              50.0%: 1.553       All: 100.00% (745)│   bytes-recv: 1,454,890
+│       .   .     .. .. . . . .  .  .││          Latency: 0.576              90.0%: 3.000                         │   bytes-sent: 504,321
+│    .  . ....... .. .. . . . .  .  .││                                      95.0%: 4.204                         │          cpu: 9.400
+│    . .......... .. .. . . . .. .  .││                                      99.0%: 5.388                         │   disk-space: 86.600
+│  ................. .. . . . .. .. .││                                      99.9%: 6.796                         │          mem: 64.200
+│ ....................... . . .. .. .││                                     100.0%: 6.796                         │
+│ ...................................││                                                                           │
+│ ...................................││                                                                           │
+│....................................││                                                                           │
+└────────────────────────────────────┘│                                                                           │
+┌─ 1 4.566 avg time (2 lat, 3 conn) ─┐│ Labels                  Hits   Failures   Avg Time                        │──────────────────────────────────────
+│                                  . ││https://www.google.com/    745      0.00%      1.774                       │18:03:29 INFO: Changed data analysis
+│                                  ..││                                                                           │delay to 3s
+│                               .  ..││ Errors:                                                                   │18:03:37 INFO: Changed data analysis
+│                               . ...││No failures occured                                                        │delay to 4s
+│                            ........││                                                                           │18:03:47 INFO: Changed data analysis
+│                          ..........││                                                                           │delay to 5s
+│                        .......o....││                                                                           │18:03:51 INFO: Changed data analysis
+│                 ..............o..oo││                                                                           │delay to 6s
+│          . .................oo@oooo││                                                                           │18:03:57 INFO: Changed data analysis
+│.   ...............oooooooooooo@oo@o││                                                                           │delay to 8s
+│@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@││                                                                           │18:04:01 INFO: Changed data analysis
+└────────────────────────────────────┘└───────────────────────────────────────────────────────────────────────────┘delay to 9s
+```
+
+
 # 测试策略
 
 1. 识别梳理
